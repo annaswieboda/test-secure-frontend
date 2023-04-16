@@ -16,6 +16,8 @@ Change in package.json localhost to 0.0.0.0
 
 Build docker image
 
+
+
 ```commandline
 docker build --tag=frontend:latest .
 docker run -p8081:8081 frontend:latest
@@ -33,5 +35,6 @@ docker run -p8081:8081 slawekradzyminski/frontend:latest
 ```
 
 ## Verification
+
 
 Application should run on [http://localhost:8081](http://localhost:8081)

@@ -7,7 +7,7 @@ on:
 
 jobs:
   ui-chrome-tests:
-    timeout-minutes: 10
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     container: 
       image: cypress/browsers:node16.18.0-chrome107-ff106-edge
@@ -31,7 +31,5 @@ jobs:
           wait-on-timeout: 120
           browser: chrome
           spec: cypress/e2e/isolation/*
-         env:
+        env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-
-  
